@@ -203,7 +203,7 @@ class HomePage extends Component {
             setTimeout(() => {
                 alert("The winner of 5 rounds is " + nameWinner);
                 window.location.reload();
-            }, 1500);
+            }, 500);
             
         }
         
