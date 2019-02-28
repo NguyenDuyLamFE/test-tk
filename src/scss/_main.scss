@@ -1,0 +1,51 @@
+@mixin positionX {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin positionY {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: red;
+    overflow: hidden;
+    .playerA {
+        left: 0;
+        @include positionX;
+    }
+    .playerC {
+        right: 0;
+        @include positionX;
+    }
+    .playerB {
+        top: 0;
+        @include positionY;
+    }
+    .user {
+        bottom: 0;
+        @include positionY;
+    }
+    .tableScore {
+        position: absolute;
+        max-width: 250px;
+        right: 15%;
+    }
+    .controlBar {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        display: block;
+        button {
+            margin-bottom: 10%;
+            display: list-item;
+            width: 100px;
+            text-align: left;
+        }
+    }
+}

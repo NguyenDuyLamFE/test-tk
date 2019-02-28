@@ -1,0 +1,40 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: red;
+  overflow: hidden; }
+  .main .playerA {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+  .main .playerC {
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+  .main .playerB {
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  .main .user {
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  .main .tableScore {
+    position: absolute;
+    max-width: 250px;
+    right: 15%; }
+  .main .controlBar {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: block; }
+    .main .controlBar button {
+      margin-bottom: 10%;
+      display: list-item;
+      width: 100px;
+      text-align: left; }
